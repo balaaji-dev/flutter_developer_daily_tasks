@@ -3,8 +3,6 @@ import 'dart:io';
 double remaining(double totalFee , double amountPaid){
   return totalFee - amountPaid;
 }
-
-
 void main(){
 
   print("Enter the Total Fee: ");
@@ -29,5 +27,4 @@ void main(){
   else if(amountPaid == 0){
       print("Payment Status: Payment Pending");
     }
-
 }
