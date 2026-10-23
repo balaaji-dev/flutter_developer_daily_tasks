@@ -5,11 +5,11 @@ void main() {
     "Anjali", "Rohit", "Pooja", "Arjun", "Divya"
   ];
 
-  printNumberedMembers(names);
-  printMembersWithoutNumbering(names);
+  NumberedMembers(names);
+  MembersWithoutNumbering(names);
 }
 
-void printNumberedMembers(List<String> names) {
+void NumberedMembers(List<String> names) {
   print("===== Gym Member List =====\n");
 
   for (int i = 0; i < names.length; i++) {
@@ -17,7 +17,7 @@ void printNumberedMembers(List<String> names) {
   }
 }
 
-void printMembersWithoutNumbering(List<String> names) {
+void MembersWithoutNumbering(List<String> names) {
   print("===== Members Without Numbering =====\n");
 
   for (int i = 0; i < names.length; i++) {
