@@ -1,17 +1,26 @@
-void main(){
-  List<String> names = ["Rahul", "Priya","Amit", "Sneha", "Kiran", "Anjali", "Rohit","Pooja","Arjun","Divya"];
-  print("===== Gym Member List =====");
 
+void main() {
+  List<String> names = [
+    "Rahul", "Priya", "Amit", "Sneha", "Kiran",
+    "Anjali", "Rohit", "Pooja", "Arjun", "Divya"
+  ];
 
-  for(int i = 0 ;i< names.length;i++){
+  printNumberedMembers(names);
+  printMembersWithoutNumbering(names);
+}
 
-    print("${i + 1} " " ${names[i]}");
+void printNumberedMembers(List<String> names) {
+  print("===== Gym Member List =====\n");
+
+  for (int i = 0; i < names.length; i++) {
+    print("${i + 1}. ${names[i]}");
   }
+}
 
-  print("===== Members Without Numbering =====");
-  for(int i = 0 ;i< names.length;i++){
+void printMembersWithoutNumbering(List<String> names) {
+  print("===== Members Without Numbering =====\n");
 
-    print(" ${names[i]}");
+  for (int i = 0; i < names.length; i++) {
+    print(names[i]);
   }
-
 }
