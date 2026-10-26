@@ -19,19 +19,15 @@ void main(){
   matchMember(searchName);
 }
 void matchMember(String searchName) {
-  bool found = false;
-  for (int i = 0; i < members.length; i++) {
-    if (members[i]['name'].toLowerCase() == searchName.toLowerCase()) {
-      found = true;
-      print("===== Gym Member Details =====");
-      print("ID: ${members[i]['id']}");
-      print("Name: ${members[i]['name']}");
-      print("Age: ${members[i]['age']}");
-      print("Monthly Fee: ${members[i]['monthlyFee']}");
-      print("==============================");
+  var result = members.where((member) => member['name'].toLowerCase() == searchName.toLowerCase());
+
+     if(result.isEmpty){
+       print("Member not found");
+     }else{
+       for(var member in result){
+         print("MemberName ${member['name']}");
+         print("MonthlyFee ${member['monthlyFee']}");
+       }
+     }
     }
-  }
-  if(!found){
-    print("Member not found");
-  }
-}
+
