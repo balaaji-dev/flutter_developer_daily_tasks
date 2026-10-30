@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Icon(
-                  Icons.psychology_alt_rounded,
+                  Icons.celebration,
                   size: 100,
                   color: Colors.deepPurple,
                 ),

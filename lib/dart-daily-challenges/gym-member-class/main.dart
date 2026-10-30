@@ -25,7 +25,7 @@ class Qwerty{
 }
 
 class studenName {
-  //Member member = Member(1, "balaji", "123");
+  Member member = Member(1, "balaji", "123");
 
   Qwerty two = Qwerty();
 
